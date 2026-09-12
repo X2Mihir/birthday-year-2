@@ -853,16 +853,49 @@
       <div class="notch" aria-hidden="true"></div>
       <div class="video-wrap">
 
+        <!--
+          ====================================================================
+          OPTION A — A DIRECT VIDEO FILE (.mp4 / .webm)
+          ====================================================================
+          This is the ACTIVE option right now. Replace the file paths below
+          with your own video. You can list more than one <source> so the
+          browser picks whichever format it supports — .mp4 is the safest
+          default for both iOS and Android.
 
+          Example:
+            <source src="videos/for-aanya.mp4" type="video/mp4">
+            <source src="videos/for-aanya.webm" type="video/webm">
+        -->
+        <video
+          controls
+          playsinline
+          preload="metadata"
+          poster="images/video-poster.jpg">
+          <source src="videos/my-message-to-you.mp4" type="video/mp4">
+          <source src="videos/my-message-to-you.webm" type="video/webm">
+          Your browser doesn't support embedded video — sorry, love.
+        </video>
 
+        <!--
+          ====================================================================
+          OPTION B — A YOUTUBE VIDEO (unlisted link recommended)
+          ====================================================================
+          If you'd rather host on YouTube, DELETE the whole <video>...</video>
+          block above, then delete the comment marks below to activate this
+          iframe instead. Use an "unlisted" YouTube upload so it isn't public.
 
+          Turn a normal link like:
+            https://www.youtube.com/watch?v=XXXXXXXXXXX
+          into an embed link:
+            https://www.youtube.com/embed/XXXXXXXXXXX
 
           <iframe
-            src="https://www.youtube.com/embed/eoSvoqx6SWs"
+            src="https://www.youtube.com/embed/XXXXXXXXXXX"
             title="A message for you"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
           </iframe>
+        -->
 
       </div>
     </div>
@@ -884,32 +917,32 @@
 
       <!-- ================= PHOTO 1 — replace src + caption below ================= -->
       <figure class="photo-card">
-        <div class="photo-frame" data-full="C:\Users\Lenovo\Downloads\WhatsApp Image 2026-09-12 at 10.24.16 PM.jpeg" data-caption="The weekend you visited">
-          <img src="C:\Users\Lenovo\Downloads\WhatsApp Image 2026-09-12 at 10.24.16 PM.jpeg" alt="The weekend you visited" loading="lazy" onerror="this.classList.add('img-fallback')">
-          <span class="fallback-mark"></span>
+        <div class="photo-frame" data-full="photos/memory-1.jpg" data-caption="The weekend you visited">
+          <img src="photos/memory-1.jpg" alt="The weekend you visited" loading="lazy" onerror="this.classList.add('img-fallback')">
+          <span class="fallback-mark">add photo 1 here</span>
         </div>
       </figure>
 
       <!-- ================= PHOTO 2 — replace src + caption below ================= -->
       <figure class="photo-card">
-        <div class="photo-frame" data-full="C:\Users\Lenovo\Downloads\WhatsApp Image 2026-09-12 at 10.24.15 PM (3).jpeg" data-caption="Our first video call, 2am your time">
-          <img src="C:\Users\Lenovo\Downloads\WhatsApp Image 2026-09-12 at 10.24.15 PM (3).jpeg" alt="Our first video call" loading="lazy" onerror="this.classList.add('img-fallback')">
+        <div class="photo-frame" data-full="photos/memory-2.jpg" data-caption="Our first video call, 2am your time">
+          <img src="photos/memory-2.jpg" alt="Our first video call" loading="lazy" onerror="this.classList.add('img-fallback')">
           <span class="fallback-mark">add photo 2 here</span>
         </div>
       </figure>
 
       <!-- ================= PHOTO 3 — replace src + caption below ================= -->
       <figure class="photo-card">
-        <div class="photo-frame" data-full="C:\Users\Lenovo\Downloads\WhatsApp Image 2026-09-12 at 10.24.15 PM (2).jpeg" data-caption="The airport goodbye">
-          <img src="C:\Users\Lenovo\Downloads\WhatsApp Image 2026-09-12 at 10.24.15 PM (2).jpeg" alt="The airport goodbye" loading="lazy" onerror="this.classList.add('img-fallback')">
+        <div class="photo-frame" data-full="photos/memory-3.jpg" data-caption="The airport goodbye">
+          <img src="photos/memory-3.jpg" alt="The airport goodbye" loading="lazy" onerror="this.classList.add('img-fallback')">
           <span class="fallback-mark">add photo 3 here</span>
         </div>
       </figure>
 
       <!-- ================= PHOTO 4 — replace src + caption below ================= -->
       <figure class="photo-card">
-        <div class="photo-frame" data-full="C:\Users\Lenovo\Downloads\WhatsApp Image 2026-09-12 at 10.24.15 PM (1).jpeg" data-caption="Add your own memory">
-          <img src="C:\Users\Lenovo\Downloads\WhatsApp Image 2026-09-12 at 10.24.15 PM (1).jpeg" alt="A memory of us" loading="lazy" onerror="this.classList.add('img-fallback')">
+        <div class="photo-frame" data-full="photos/memory-4.jpg" data-caption="Add your own memory">
+          <img src="photos/memory-4.jpg" alt="A memory of us" loading="lazy" onerror="this.classList.add('img-fallback')">
           <span class="fallback-mark">add photo 4 here</span>
         </div>
       </figure>
